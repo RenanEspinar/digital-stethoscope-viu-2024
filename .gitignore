@@ -1,0 +1,12 @@
+# Exclude source code, hardware design and confidential data
+firmware/
+backend/
+private/
+patient_data/
+clinical_records/
+*.pem
+*.key
+.env
+.env.*
+!/.gitignore
+.DS_Store
