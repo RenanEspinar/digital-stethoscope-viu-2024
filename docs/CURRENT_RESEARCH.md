@@ -1,7 +1,13 @@
-# Next-generation redesign — distinct from 2024 study
+# Research continuation — 2026 modular stethoscope
 
-The current follow-on research at UNIVALLE explores a modular digital stethoscope with **reversible acoustic coupling**, a low-noise transducer, embedded sound capture, and options for local recording and signal transfer.
+This **separate** follow-on research at Universidad del Valle (UNIVALLE) explores one functional prototype based on:
 
-The architecture currently under consideration includes a conventional stethoscope head, a reversible acoustic interface, a low-noise microphone, an ESP32-S3-class embedded platform, and software for waveform acquisition and file handling. **These are planned/design-stage features; no claim is made that the new configuration has repeated the 2024 clinical study or achieved validated diagnostic performance.**
+- Original **Littmann Classic III** chestpiece with reversible acoustic coupling;
+- low-noise **PUI AOM-5024L-HD-R** electret microphone under consideration;
+- **ESP32-S3** microcontroller;
+- analog acquisition / ADC chain, WAV storage, headphone playback and Wi-Fi transmission;
+- repeatable noise, bandwidth and calibration tests before any clinical deployment.
 
-Detailed engineering files and source code are excluded from the public showcase. This project has no demonstrated automated diagnostic AI model in the information provided.
+**Status:** planned/prototyping architecture. No claim that this design has completed clinical tests, obtained regulatory certification, or trained a diagnostic AI model.
+
+Engineering priorities are transducer coupling characterization, ADC/sample-rate verification, repeatable DSP benchmarking, and test protocols with traceable reference signals. Any future study involving human participants needs appropriate consent and institutional governance.

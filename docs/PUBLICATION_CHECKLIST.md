@@ -1,15 +1,28 @@
-# Public release checklist — mandatory review
+# Public repository release checklist
 
-Before publishing this repository to a public GitHub account:
+This list addresses the recovered **2022–2023** thesis, not a hypothetical 2024 clinical study.
 
-- [ ] Confirm the 2024 VIU thesis and any hospital-related materials may be publicly summarized and attributed as written.
-- [ ] Confirm permission to use the Hospital de Clínicas name when describing the clinical history.
-- [ ] Confirm whether the two WAVs are study recordings or separate non-clinical examples. Do **not** publish the WAVs if this is unknown.
-- [ ] Obtain/verify appropriate patient consent, ethics/institutional authorization, and research data handling permission for publishing **each** clinical sound file if relevant.
-- [ ] Check that no patient identifiers, voices, metadata or other personal details are embedded in the WAVs, figures or file names.
-- [ ] If audio permissions are not confirmed, **use the public-safe ZIP without any sample files or derived figures**.
-- [ ] Confirm clinical statements can be supported by thesis records or physician assessments before making stronger claims.
-- [ ] Keep proprietary firmware, detailed circuit designs, confidential technical files, credentials and private datasets out of this public repo.
-- [ ] Preview the GitHub README and each link before adding the repository to a CV.
+## Technical documentation
 
-**Private GitHub repositories are not substitutes for patient permission or institutional authorization.**
+- [x] Correct historical dates and official thesis title.
+- [x] Distinguish original hardware from the 2026 continuation.
+- [x] Include engineering-only prototype photographs, CAD and interface screenshots.
+- [ ] Recheck ownership/attribution of third-party illustrations in the screenshots.
+- [ ] Restore any historical firmware/software only after removing embedded network credentials and testing build/dependencies.
+- [ ] Verify DSP, ADC configuration and acquisition sample-rate consistency before claiming quantified accuracy.
+
+## Patient privacy and permissions
+
+- [ ] Obtain explicit permission for public worldwide distribution for **each** identifiable photograph/audio sample, plus any necessary institutional approvals.
+- [ ] Review existing WAVs in GitHub: provenance, patient identifiers and consent scope **remain unverified**.
+- [ ] If distribution authorization is absent, remove sensitive WAV files and consider **Git history remediation**; removing a README link alone is not sufficient.
+- [ ] Check plots derived from clinical data and any screenshot metadata.
+- [ ] Keep signed forms, case identifiers, patient names, records and identifiable examination photographs out of public GitHub.
+
+**Important:** The thesis consent template authorizes academic recording and states recordings are not to be shared with unauthorized third parties. That is not blanket permission for public hosting.
+
+## Scientific statements
+
+- [x] Report exploratory **n = 5** without statistical diagnostic accuracy claims.
+- [x] Attribute observations to clinicians, not automated AI.
+- [x] State that the device is experimental and not a certified medical device.

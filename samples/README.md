@@ -1,3 +1,7 @@
-# Audio samples withheld
+# WAV recordings — publication review required
 
-Sound recordings and derived figures are not posted publicly until their origin and publication permissions are confirmed. The 2024 study history is documented in the project README.
+This repository historically included two WAV files. Their provenance and consent for unrestricted online distribution have **not been independently verified**. Direct playback is intentionally not promoted in the new README, and no patient-level diagnosis is assigned to any file.
+
+**Existing files and Git history may still be public.** The repository owner should review each audio file and remove/remediate it if explicit authorization for public redistribution is unavailable. The original thesis consent form does not by itself prove that authorization.
+
+See [publication checklist](../docs/PUBLICATION_CHECKLIST.md).
