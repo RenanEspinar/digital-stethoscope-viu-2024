@@ -1,76 +1,286 @@
+
 # Digital Stethoscope — Biomedical Engineering Research
 
-**2024 Master's thesis at Universidad Internacional de Valencia (VIU)**  
-**Biomedical audio acquisition | Electronic instrumentation | Cardiac auscultation**
+**2024 Master's Thesis | Universidad Internacional de Valencia (VIU)**
 
-This repository documents the engineering work behind a digital stethoscope developed as part of a **Master's Degree in Biomedical Engineering at VIU in 2024**. The project focused on capturing and processing cardiopulmonary sounds with electronic instrumentation while preserving clinically interpretable acoustic information.
+Biomedical Audio Acquisition · Electronic Instrumentation · Cardiac Auscultation · Digital Signal Processing
 
-The original study was designed at VIU. **According to the project author, the 2024 prototype was evaluated at Hospital de Clínicas in La Paz, Bolivia, and the recordings were assessed by cardiologists.** The clinical observations reported by the author included **gallop rhythms** and **irregular cardiac rhythms**. The original medical records, individual diagnostic labels, ethics documentation, and quantitative diagnostic-accuracy results have not been supplied for this public repository. Accordingly, this is presented as *clinician-reviewed exploratory research*, not as proof of independent diagnostic accuracy.
+**Researcher:** Renan Andres Espinar Saavedra  
+**Location:** La Paz, Bolivia  
+**Research period:** 2024–Present
 
-> **Scope:** A research and engineering portfolio case study. This is not a certified medical device, a clinical diagnosis service, or an automated arrhythmia diagnostic system.
+---
 
-## Engineering contributions
+## Project Overview
 
-- Built an approach for **digital acquisition of cardiopulmonary acoustic signals** using an electronic sensing and signal-processing chain.
-- Worked on **signal recording, digitization, and playback**, supporting review of cardiac acoustic events.
-- Evaluated the usability of recorded heart sounds for **physician-led auscultatory interpretation**, according to the project's 2024 study history.
-- Investigated integration of **acoustic sensing, embedded electronics, and digital signal processing** within a biomedical instrumentation prototype.
+This repository documents the research, design and development of a digital stethoscope originally created in 2024 as part of a Master's Degree in Biomedical Engineering at the Universidad Internacional de Valencia (VIU), Spain.
 
-## Historical development and current research
+The project investigated the acquisition, digitization, processing and reproduction of cardiopulmonary acoustic signals using electronic instrumentation.
 
-| Period | Project stage | Status |
-| --- | --- | --- |
-| **2024 — VIU** | Original digital stethoscope and master's thesis; pilot recordings assessed by cardiologists at Hospital de Clínicas, as reported by the author | Historical study; supporting clinical documents not published here |
-| **2026 — UNIVALLE** | Follow-on research towards a modular, reversible stethoscope interface and updated embedded acquisition architecture | Separate redesign in development; **the 2024 clinical observations must not be treated as validation of this new hardware** |
+The objective was to preserve clinically relevant acoustic information while enabling digital recording, signal analysis and physician-led auscultation.
 
-### System overview
+According to the project author, the original prototype underwent exploratory clinical evaluation at Hospital de Clínicas in La Paz, Bolivia, with recordings reviewed by cardiologists.
+
+Reported clinical observations included gallop rhythms, irregular cardiac rhythms and other auscultatory findings.
+
+Individual patient records, clinical classifications, ethics documentation and quantitative diagnostic-accuracy results are not included in this public repository.
+
+**Research scope:** This project documents biomedical instrumentation research. It is not a certified medical device or an independently validated automated diagnostic system.
+
+---
+
+## Cardiac Audio Recordings
+
+The following recordings demonstrate the acquisition of cardiac acoustic signals using the research prototype.
+
+Both samples are available directly from this README.
+
+### Recording 01 — Cardiac Auscultation
+
+**Duration:** 15.35 seconds  
+**Format:** WAV · 22,050 Hz · Mono
+
+### [▶ LISTEN TO CARDIAC RECORDING 01](https://raw.githubusercontent.com/RenanEspinar/digital-stethoscope-viu-2024/main/samples/audio_output_fine%20%281%29.wav)
+
+[View original WAV file](samples/audio_output_fine%20%281%29.wav)
+
+---
+
+### Recording 02 — Cardiac Auscultation
+
+**Duration:** 24.40 seconds  
+**Format:** WAV · 22,050 Hz · Mono
+
+### [▶ LISTEN TO CARDIAC RECORDING 02](https://raw.githubusercontent.com/RenanEspinar/digital-stethoscope-viu-2024/main/samples/audio_output2_fine.wav)
+
+[View original WAV file](samples/audio_output2_fine.wav)
+
+---
+
+### Audio Documentation
+
+These recordings demonstrate the digital capture and reproduction of cardiac acoustic signals.
+
+The recordings are presented without individual diagnostic labels.
+
+Although the original research involved physician-led evaluation, no specific diagnosis is attributed to either published recording without its corresponding clinical documentation.
+
+The recordings should not be interpreted as evidence of independently validated diagnostic sensitivity or specificity.
+
+**Publication note:** The WAV files are publicly accessible. Individual clinical provenance and publication permissions have not been independently verified in this repository. Appropriate patient consent and institutional authorization are required for public dissemination of clinical recordings.
+
+**Playback:** Depending on the browser, selecting a recording will open its audio player or download the WAV file. GitHub does not provide embedded audio playback controls within Markdown READMEs.
+
+---
+
+## Engineering Contributions
+
+The project involved the integration of biomedical sensing, electronic instrumentation and computational signal processing.
+
+Key engineering activities included:
+
+- Development of an electronic system for acquiring cardiopulmonary acoustic signals.
+- Integration of acoustic transducers and electronic instrumentation.
+- Acquisition and digitization of physiological audio signals.
+- Digital recording and reproduction of cardiac sounds.
+- Investigation of signal conditioning and noise reduction.
+- Visualization and analysis of recorded physiological signals.
+- Experimental evaluation of signal acquisition and playback.
+- Assessment of the recorded signals for physician-led clinical interpretation.
+
+The research provided a foundation for subsequent development of embedded biomedical acquisition systems.
+
+---
+
+## System Architecture
+
+The original research investigated a signal acquisition and processing architecture consisting of the following functional stages:
 
 ```text
-Acoustic heart sounds
-       │
-       ▼
-Acoustic coupling / transducer
-       │
-       ▼
-Signal conditioning and digitization
-       │
-       ▼
-Digital audio recording
-       │
-       ├── Listening / clinical review by a qualified practitioner
-       └── Signal visualization and research analysis
+          CARDIAC ACOUSTIC SIGNAL
+                    |
+                    v
+          ACOUSTIC TRANSDUCER
+                    |
+                    v
+          SIGNAL CONDITIONING
+                    |
+                    v
+          ANALOG-TO-DIGITAL
+               CONVERSION
+                    |
+                    v
+          DIGITAL ACQUISITION
+                    |
+                    v
+          SIGNAL PROCESSING
+                    |
+           +--------+--------+
+           |                 |
+           v                 v
+      AUDIO RECORDING   SIGNAL ANALYSIS
+           |                 |
+           v                 v
+      AUDIO PLAYBACK     VISUALIZATION
+           |                 |
+           +--------+--------+
+                    |
+                    v
+          CLINICAL INTERPRETATION
+          BY QUALIFIED PHYSICIANS
 ```
 
-This is a functional block diagram; it does not disclose the proprietary circuit design or claim a specific hardware configuration for the 2024 device.
+This functional architecture describes the research workflow without disclosing proprietary circuit designs or implementation details.
 
-## Audio examples
+---
 
-Two demonstration recordings have been provided to the project author but **are not publicly released** because publication permissions and their clinical provenance have not been confirmed. Neither sample has been assigned a clinical diagnosis.
+## Research History
 
-| Material | Publication status |
-| --- | --- |
-| Two digital cardiac-audio demonstration recordings | Withheld pending permissions and provenance verification |
-| Waveforms and spectrograms derived from those recordings | Withheld pending the same review |
+### 2024 — Universidad Internacional de Valencia
 
-**Release gate:** Recordings and derived figures remain excluded until authorized. See the [publication checklist](docs/PUBLICATION_CHECKLIST.md).
+**Master's Thesis: Digital Stethoscope**
 
-## Clinical interpretation and limitations
+The initial research was developed within the Master's Degree in Biomedical Engineering at VIU.
 
-A **gallop rhythm** is an auscultatory finding often associated with an additional heart sound (S3 or S4); it is not itself a standalone disease diagnosis. An **irregular audible rhythm** can prompt investigation for arrhythmia, but definitive arrhythmia diagnosis generally relies on electrocardiographic assessment. This project does not claim automated pathology classification, diagnostic sensitivity/specificity, or validated performance across clinical populations.
+The project addressed electronic auscultation, biomedical acoustic signal acquisition and digital processing.
+
+According to the project author, exploratory evaluations were performed at Hospital de Clínicas, La Paz, with physician-led interpretation of acquired cardiac recordings.
+
+The reported observations included additional heart sounds consistent with gallop rhythms and irregular cardiac rhythms.
+
+These observations are documented as historical research findings reported by the author, rather than independently verified diagnostic-performance claims.
+
+### 2026 — Universidad del Valle (UNIVALLE)
+
+**Intelligent Digital Stethoscope — Research Continuation**
+
+Subsequent research focuses on developing an updated biomedical acquisition platform using modular electronic instrumentation and embedded processing.
+
+Research directions include:
+
+- Improved acoustic coupling and signal acquisition.
+- Embedded hardware integration.
+- Digital signal processing.
+- Wireless communication.
+- Physiological audio recording.
+- Signal visualization.
+- Experimental validation of updated hardware.
+
+The 2026 development represents a separate hardware research iteration.
+
+Clinical observations from the 2024 study must not be interpreted as validation of the redesigned hardware.
+
+---
+
+## Clinical Research Context
+
+Cardiac auscultation provides information about heart sounds, rhythm, murmurs and additional acoustic events.
+
+Digital acquisition enables physiological sounds to be recorded, reproduced and analyzed.
+
+During the original research, the clinical assessment described by the author involved cardiologists reviewing recorded acoustic signals.
+
+Reported findings included:
+
+- Gallop rhythms and additional heart sounds.
+- Irregular audible cardiac rhythms.
+- Other clinically relevant auscultatory observations.
+
+A gallop rhythm is an auscultatory finding associated with additional heart sounds, commonly S3 or S4.
+
+An irregular audible cardiac rhythm may indicate the need for further clinical investigation, but definitive diagnosis of an arrhythmia generally requires electrocardiographic assessment.
+
+The project does not claim automatic diagnosis, validated pathology classification or quantified diagnostic accuracy.
+
+---
+
+## Technical Areas
+
+**Biomedical Engineering**
+- Electronic auscultation
+- Biomedical instrumentation
+- Physiological sensing
+- Medical-device prototyping
+
+**Signal Acquisition and Processing**
+- Acoustic signal acquisition
+- Analog-to-digital conversion
+- Digital audio recording
+- Signal conditioning
+- Signal visualization
+
+**Mechatronics and Embedded Systems**
+- Sensor integration
+- Electronic prototyping
+- Embedded system architecture
+- Hardware-software integration
+- Experimental validation
+
+---
+
+## Repository Structure
+
+```text
+digital-stethoscope-viu-2024/
+|
+|-- README.md
+|
+|-- samples/
+|   |-- audio_output_fine (1).wav
+|   |-- audio_output2_fine.wav
+|   |-- README.md
+|
+|-- docs/
+|   |-- CLINICAL_BACKGROUND.md
+|   |-- CURRENT_RESEARCH.md
+|   |-- PUBLICATION_CHECKLIST.md
+|
+|-- .gitignore
+```
+
+The original firmware, detailed electronic schematics, source code and unpublished research materials are not included in this public repository.
+
+---
 
 ## Documentation
 
-- [2024 clinical research history and evidence status](docs/CLINICAL_BACKGROUND.md)
-- [Audio sharing policy](samples/README.md)
-- [Publication checklist and permissions](docs/PUBLICATION_CHECKLIST.md)
-- [Next-generation research scope](docs/CURRENT_RESEARCH.md)
+- [Clinical Research Background](docs/CLINICAL_BACKGROUND.md)
+- [Current Research and Development](docs/CURRENT_RESEARCH.md)
+- [Publication and Research Documentation Checklist](docs/PUBLICATION_CHECKLIST.md)
+- [Audio Samples Directory](samples/)
 
-## Repository boundaries
+---
 
-**Firmware, source code, detailed PCB or circuit designs, raw patient datasets, and unpublished study material are not included.** Technical implementation remains in a restricted development workspace. No code license is provided by this overview. Please contact the author for legitimate scientific or technical collaboration.
+## Research Limitations
+
+This repository documents engineering research and exploratory clinical observations.
+
+The original study's supporting clinical records, individual case descriptions and formal diagnostic-performance metrics have not been published here.
+
+Audio recordings alone cannot establish the presence of a specific cardiac pathology without appropriate clinical interpretation and supporting examination data.
+
+The experimental device should not be used as a replacement for certified diagnostic medical equipment.
+
+---
 
 ## Researcher
 
-**Renan Andres Espinar Saavedra**  
-Mechatronics Engineer · Master's Degree in Biomedical Engineering  
-[GitHub portfolio](https://github.com/RenanEspinar)
+**Renan Andres Espinar Saavedra**
+
+Mechatronics Engineer  
+University Master's Degree in Biomedical Engineering
+
+Research Coordinator for Technology and Computer Science  
+Universidad del Valle — UNIVALLE
+
+La Paz, Bolivia
+
+**Research interests:** Biomedical instrumentation, medical-device development, physiological signal processing, embedded systems, intelligent medical technologies and applied engineering research.
+
+**GitHub:** [github.com/RenanEspinar](https://github.com/RenanEspinar)
+
+**ORCID:** [0009-0007-1918-7177](https://orcid.org/0009-0007-1918-7177)
+
+---
+
+*Biomedical engineering research project originally developed at Universidad Internacional de Valencia (2024), with subsequent research activities at Universidad del Valle (2026).*
