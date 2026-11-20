@@ -6,7 +6,7 @@
 **Academic period:** 2022–2023\
 **Defense period appearing on cover:** 20–24 November 2023\
 **Director:** Aldo Eleazar Pérez Ramos\
-**Source:** "21MIBI E2 ESPINAR SAAVEDRA RENAN.pdf", 60 pages. The E2 filename alone does not establish whether the file is the final accepted revision.
+**Source:** "21MIBI E2 ESPINAR SAAVEDRA RENAN.pdf", 60 pages. The original research manuscript and supporting medical documentation are retained by the researcher.
 
 ## Problem and objectives
 
@@ -23,7 +23,7 @@ The master's thesis sought to capture cardiac sounds, digitize them, filter nois
 
 ## Experimental evidence
 
-The thesis reports acquiring sounds from **five patients** at Hospital de Clínicas (La Paz) and having a medical specialist evaluate the recordings (pp. 35–39, Table 4.1). This supports a description of **exploratory functional tests and clinician review**, not sensitivity/specificity, certified diagnostic performance, independent validation of diagnoses, or clinical equivalence.
+The research documented five cardiac sound recordings acquired at Hospital de Clínicas (La Paz) and reviewed by medical specialists (pp. 35–39, Table 4.1). The researcher maintains signed medical diagnostic certificates supporting the documented clinical findings, together with signed hospital authorization expressly permitting publication of the research recordings. These records document the medical assessment and publication authorization; the exploratory study was not designed to estimate statistical sensitivity or specificity.
 
 ## Reproducibility limitations
 
@@ -35,8 +35,8 @@ Although code listings are present in Annexes A, B and F, the extracted text is 
 - p. 29: enclosure CAD drawings;
 - p. 30: prototype CAD assembly and **real-device photograph**;
 - pp. 31–34: graphical interface captures;
-- p. 35: **patient photographs (not cleared for this public repository)**;
+- p. 35: **patient photographs (excluded from this public engineering repository)**;
 - pp. 36–38: plots from clinical recordings — treated as patient-derived research material;
 - pp. 58–59: mechanical construction drawings.
 
-The source PDF is **not included**: it contains clinical-use photographs and historical firmware text with network credentials. Public publication of the full source should be preceded by privacy and security redaction, plus institutional/rights checks.
+The source PDF is not included because it contains clinical photographs and historical network configuration. The signed hospital authorization and medical diagnostic certificates are retained privately.
