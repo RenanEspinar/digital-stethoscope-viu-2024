@@ -1,28 +1,67 @@
-# Public repository release checklist
+# Research Publication and Documentation Record
 
-This list addresses the recovered **2022–2023** thesis, not a hypothetical 2024 clinical study.
+## Original Research
 
-## Technical documentation
+Project: Electronic Stethoscope for Cardiac Sound Acquisition and Processing.
 
-- [x] Correct historical dates and official thesis title.
-- [x] Distinguish original hardware from the 2026 continuation.
-- [x] Include engineering-only prototype photographs, CAD and interface screenshots.
-- [ ] Recheck ownership/attribution of third-party illustrations in the screenshots.
-- [ ] Restore any historical firmware/software only after removing embedded network credentials and testing build/dependencies.
-- [ ] Verify DSP, ADC configuration and acquisition sample-rate consistency before claiming quantified accuracy.
+Research period: 2022-2023.
 
-## Patient privacy and permissions
+Researcher: Renan Andres Espinar Saavedra.
 
-- [ ] Obtain explicit permission for public worldwide distribution for **each** identifiable photograph/audio sample, plus any necessary institutional approvals.
-- [ ] Review existing WAVs in GitHub: provenance, patient identifiers and consent scope **remain unverified**.
-- [ ] If distribution authorization is absent, remove sensitive WAV files and consider **Git history remediation**; removing a README link alone is not sufficient.
-- [ ] Check plots derived from clinical data and any screenshot metadata.
-- [ ] Keep signed forms, case identifiers, patient names, records and identifiable examination photographs out of public GitHub.
+Clinical evaluation location: Hospital de Clinicas, La Paz, Bolivia.
 
-**Important:** The thesis consent template authorizes academic recording and states recordings are not to be shared with unauthorized third parties. That is not blanket permission for public hosting.
+## Documented Research
 
-## Scientific statements
+- Original functional electronic stethoscope prototype.
+- Physical prototype photographs.
+- Electronic acquisition architecture.
+- ESP32 and MAX9814 implementation.
+- Python signal-processing interface.
+- Digital filtering and spectral visualization.
+- Five cardiac sound recordings.
+- Medical specialist evaluation.
+- Signed medical diagnostic certificates retained by the researcher.
 
-- [x] Report exploratory **n = 5** without statistical diagnostic accuracy claims.
-- [x] Attribute observations to clinicians, not automated AI.
-- [x] State that the device is experimental and not a certified medical device.
+## Publication Authorization
+
+The researcher confirms possession of signed hospital documentation expressly authorizing publication of the research sound recordings.
+
+The signed authorization is retained privately.
+
+The original medical diagnostic certificates are also maintained in the research records.
+
+Neither the signed authorization nor individual certificates are publicly attached to patient identities.
+
+## Public Materials
+
+The repository includes:
+
+- Engineering documentation.
+- Physical prototype photographs.
+- Mechanical CAD illustrations.
+- System architecture.
+- Software interface images.
+- Experimental research descriptions.
+- Two cardiac sound recordings.
+
+## Private Materials
+
+The following materials are maintained outside the public repository:
+
+- Original firmware source code.
+- Original Python application source code.
+- Signed hospital authorization.
+- Medical diagnostic certificates.
+- Patient-identifying clinical documentation.
+
+## Scientific Scope
+
+The prototype demonstrated cardiac acoustic acquisition, wireless communication, digital processing and recording.
+
+Clinical evaluation was performed by medical professionals.
+
+The research did not involve an automated diagnostic algorithm.
+
+The exploratory clinical assessment is not represented as a statistical study of diagnostic sensitivity or specificity.
+
+Publication of the recordings does not grant unrestricted third-party redistribution rights.
