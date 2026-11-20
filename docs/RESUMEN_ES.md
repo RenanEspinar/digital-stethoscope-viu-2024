@@ -1,12 +1,51 @@
-# Estetoscopio electrónico — resumen del TFM
+# Estetoscopio electronico - Investigacion biomédica
 
-**Trabajo:** *Diseño de un prototipo de sistema de estetoscopio electrónico para digitalizar y procesar sonidos cardíacos*.\
-**Autor:** Renán Andrés Espinar Saavedra. **Universidad:** Universidad Internacional de Valencia (VIU). **Gestión:** 2022–2023; periodo de defensa indicado: 20–24 de noviembre de 2023.
+**Investigador:** Renan Andres Espinar Saavedra.
 
-Se construyó un prototipo con captación acústica, amplificación **MAX9814**, adquisición mediante **ESP32**, transmisión **Wi-Fi** y una interfaz en **Python** para grabación WAV, visualización espectral y filtrado. Se diseñó una carcasa impresa en 3D, documentada mediante planos y una fotografía del dispositivo.
+**Investigacion original:** 2022-2023.
 
-El documento registra pruebas exploratorias con **cinco pacientes** en el Hospital de Clínicas de La Paz y comentarios de un especialista. No demuestra precisión diagnóstica validada, diagnóstico automático ni certificación clínica.
+**Trabajo:** Diseno de un prototipo de sistema de estetoscopio electronico para digitalizar y procesar sonidos cardiacos.
 
-La investigación de 2026 corresponde a **otro prototipo**, con acoplamiento reversible y arquitectura prevista alrededor de ESP32-S3. Las pruebas del TFM no validan automáticamente este rediseño.
+## Desarrollo tecnologico
 
-**Privacidad:** el manuscrito contiene imágenes clínicas y código histórico con ajustes de red. Por ello, no se publica completo ni se incluyen fotografías de pacientes. La difusión pública de grabaciones clínicas requiere comprobar consentimiento específico y autorizaciones aplicables.
+Se construyo un prototipo funcional de estetoscopio electronico.
+
+El sistema incorporo un modulo MAX9814 para amplificacion acustica y un microcontrolador ESP32 para adquisicion y transmision mediante Wi-Fi.
+
+Se desarrollo una aplicacion en Python que permitia:
+
+- Recibir las senales acusticas.
+- Reproducir los sonidos capturados.
+- Almacenar grabaciones WAV.
+- Aplicar filtrado digital.
+- Visualizar informacion espectral.
+
+La estructura mecanica fue disenada mediante CAD y fabricada por impresion 3D.
+
+## Evaluacion clinica
+
+La investigacion incluyo cinco grabaciones de sonidos cardiacos obtenidas en el Hospital de Clinicas de La Paz.
+
+Las grabaciones fueron evaluadas por especialistas medicos.
+
+El investigador conserva certificados medicos firmados que respaldan los hallazgos clinicos documentados.
+
+Asimismo, confirma disponer de autorizacion hospitalaria firmada que permite expresamente publicar las grabaciones de la investigacion.
+
+Las autorizaciones y los certificados originales se mantienen en los archivos privados del investigador.
+
+## Resultados
+
+El trabajo documento un sistema funcional de instrumentacion biomedica capaz de adquirir, transmitir, registrar y procesar sonidos cardiacos.
+
+La evaluacion medica aporto documentacion clinica de los sonidos registrados.
+
+Los diagnosticos fueron establecidos por profesionales medicos, no por un algoritmo de diagnostico automatico.
+
+El estudio exploratorio no constituye una estimacion estadistica de sensibilidad o especificidad diagnostica.
+
+## Continuacion de la investigacion
+
+La investigacion posterior de 2026 contempla un nuevo prototipo modular, con acoplamiento acustico reversible y una arquitectura basada en ESP32-S3.
+
+Este desarrollo es independiente de la configuracion original y requiere sus propias pruebas.
