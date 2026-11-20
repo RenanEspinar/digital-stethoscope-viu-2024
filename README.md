@@ -36,15 +36,22 @@ The original hardware and software architecture are documented in the research m
 
 ## Gallery
 
-| Physical prototype | Enclosure CAD |
-|---|---|
-| ![Real prototype](assets/prototype_real_photo.jpg) | ![Enclosure parts](assets/enclosure_cad.jpg) |
+<table>
+<tr>
+<th align="center">Physical prototype</th>
+<th align="center">CAD assembly</th>
+</tr>
+<tr>
+<td width="50%" align="center">
+<img src="assets/prototype_real_photo.jpg" alt="Original electronic stethoscope prototype" width="280">
+</td>
+<td width="50%" align="center">
+<img src="assets/prototype_3d_render.jpg" alt="Original CAD assembly of the electronic stethoscope" width="280">
+</td>
+</tr>
+</table>
 
-| CAD assembly | Original Python interface |
-|---|---|
-| ![Assembly rendering](assets/prototype_3d_render.jpg) | ![Python graphical interface with blank patient fields](assets/python_gui.jpg) |
-
-*The photographs and figures above come from the author's thesis: pages 29, 30 and 34. Patient photographs are deliberately excluded. Figures may retain university formatting or other third-party imagery; attribution/publication rights should be reviewed before reuse outside this documentation.*
+*Original prototype photograph and CAD assembly from the 2023 research project. The images depict the actual prototype and its original mechanical design.*
 
 ## Clinical Evaluation and Medical Documentation (2023)
 
